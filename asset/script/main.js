@@ -19,6 +19,31 @@ $(document).ready(function() {
 	$('.shape').shape();
 	$('.ui.sidebar').sidebar();
 	
+	setTimeout(
+	function() 
+	{
+     $('#columsub').transition('fly right');
+	}, 800);
+	
+	setTimeout(
+	function() 
+	{
+     $('#mainlogo').transition('horizontal flip');
+	}, 1200);
+  
+	
+	
+
+	// Toggle a sliding animation animation
+	$("#wprmenu_bar").click(function () {
+	
+	//$('#wprmenu_menu_ul .menu-item').transition({animation : 'scale',reverse   : 'auto',interval  : 200});
+	$('.menu-item').transition('fly right');
+	
+	});
+
+	
+	
 	// don't show invalid images
 	$("img").error(function () { 
 		$(this).css({visibility:"hidden"}); // reserve area if dimensions are set
@@ -36,3 +61,6 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+
+
