@@ -4,4 +4,4 @@ This is template for SemanticUI, enjoy!
 
 #Install
 
-Need Plugin: https://br.wordpress.org/plugins/wp-responsive-menu/
+Need Special Plugin for semanticUI: https://mega.nz/#!jJoBUYCD!HOOxwRDB_Pv4NbowNfRfHIhIOPW4LovhEUP7AXsckSk
