@@ -389,9 +389,16 @@ img {
 }
 
 #main-header-grid {
-	padding-top: 1.5rem;
-	width: 100%;
-    height: 100vh !important;
+    position: relative;
+    height: 105vh !important;
+    width: 102%;
+    overflow: hidden;
+	    margin-left: -14px;
+}
+
+.sub .header {
+	    font-size: 76%;
+    font-family: inherit;
 }
 
 #main-footer-grid {
@@ -444,3 +451,42 @@ img {
 @media only screen and (min-width: 1250px) {
 	/* HD desktop & possibly TV's */
 }
+
+/*#mainlogo{display:none;}
+#sublogo{display:none;}*/
+
+.colunlogo {
+	width: 100%!important;
+    margin: 0!important;
+    box-shadow: none!important;
+    padding: 1rem!important;
+}
+
+
+#columlogo {
+	width: 100%!important;
+    margin: 0!important;
+    box-shadow: none!important;
+    padding: 1rem!important;
+
+}
+
+#columlogo img{
+	    width: 34%;
+}
+
+#columsub{
+	width: 100%!important;
+    margin: 0!important;
+    box-shadow: none!important;
+    padding: 1rem!important;
+	top: -27%;
+	visibility:hidden;
+}
+
+#mainlogo{
+	visibility:hidden;
+	
+}
+.shiftnav-wrap { padding-top:0 !important; }
+

@@ -56,7 +56,7 @@ class integrations extends abstract_base {
 			'video'
 		));
 		add_theme_support('custom-background', array(
-			'default-color'          => '35bdb2',
+			'default-color'          => '',
 			'default-repeat'         => 'repeat',
 			'default-position-x'     => 'center',
 			'default-attachment'     => 'scroll',

@@ -33,35 +33,80 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 <?php template_part($theme->content_sub_path.'/head'); ?>
 </head>
 <body <?php body_class('public-page'); ?>>
+<style>
+	.evg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+	}
+	.video {
+    display: block;
+	}
+
+	.audio, .canvas, .progress, .video {
+    display: inline-block;
+    vertical-align: baseline;
+	}	
+	</style>
+
 	<div id="page-wrapper">
 		<div id="page-container">
+		
+		
+		
+		<?php if ( is_home() || is_front_page() ) { ?>
+		
 			<header class="ui middle aligned stackable page grid" id="main-header-grid">
+			
+		
+		
+		<video muted="" preload="auto" loop="" autoplay="" poster="" class="evg-video">
+
+			<source src="http://evertank.net/videoplayback.mp4" type="video/webm">
+
+		</video>
+		
 				<?php
 				if ($logo_width != 'zero') {
 					?>
-				<div class="<?php echo $logo_width; ?> wide center aligned column">
+				<div class="<?php echo $logo_width; ?> wide center aligned column" id="columlogo">
 					<?php
 					if ($theme->get_option('logo_url')) {
 						?>
 						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-							<img src="<?php echo $theme->get_option('logo_url'); ?>" alt="company logo">
+							<img src="<?php echo $theme->get_option('logo_url'); ?>" alt="company logo" id="mainlogo">
 						</a>
 						<?php
 					}
 					?>
 				</div>
+				
+				 
+				
+				
+
+				
 				<?php
 				} // logo width
 				
 				if ($menu_width != 'zero') {
 					?>
-				<div class="<?php echo $menu_width; ?> wide column">
+				<div class="<?php echo $menu_width; ?> wide column" id="columsub">
 					<?php
 					if ($theme->get_option('header_text') || $theme->get_option('header_subtext')) {
 						?>
-						<h1 class="ui huge inverted center aligned header">
+						<h1 class="ui huge inverted center aligned header" id="sublogo">
 							<?php echo $theme->get_option('header_text'); ?>
-							<div class="sub header">
+							<div class="sub header" >
 								<?php echo $theme->get_option('header_subtext'); ?>
 							</div>
 						</h1>
@@ -82,5 +127,37 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 			} // menu width
 			?>
 			</header>
+			
+			
+			<?php } else {?>
+			
+			
+			<header class="agroup">
+			
+			
+
+				<div class="<?php echo $logo_width; ?> wide center aligned column" id="columlogoA">
+					<?php
+					if ($theme->get_option('logo_url')) {
+						?>
+						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+							<img src="<?php echo $theme->get_option('logo_url'); ?>" alt="company logo" id="mainlogo">
+						</a>
+						<?php
+					}
+					?>
+				</div>
+				
+			<?php }  ?>
+			
+			</header>
+			
+			
+			
+			
+			
+			
+			
+			
 			<div class="ui page stackable grid" id="main-content-grid">
 				<div class="sixteen wide column"><?php
