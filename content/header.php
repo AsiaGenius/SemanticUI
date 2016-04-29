@@ -31,8 +31,9 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 <html <?php language_attributes(); ?>>
 <head>
 <?php template_part($theme->content_sub_path.'/head'); ?>
+
 </head>
-<body <?php body_class('public-page'); ?>>
+<body <?php body_class('public-page'); ?> class="aparition">
 <style>
 	.evg-video {
     position: absolute;
@@ -58,20 +59,51 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 	}	
 	</style>
 
+	
+	
 	<div id="page-wrapper">
 		<div id="page-container">
 		
+
+<div class="language-manager">
+
+<span>
+
+  <div class="ui inline dropdown">
+    <div class="text">
+	  <img class="ui  image" src="https://s3.amazonaws.com/cdn.enveritasgroup.com/uploads/2016/02/usa.jpg">
+
+    </div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item">
+        <img class="ui  image" src="http://personallocksmith.com/images/flags/brazil.png">
 		
+      </div>
+	  
+	  
+	  <div class="item">
+        <img class="ui  image" src="https://s3.amazonaws.com/cdn.enveritasgroup.com/uploads/2016/02/usa.jpg">
+
+      </div>
+      
+    </div>
+  </div>
+</span>
+
+</div>
+
 		
 		<?php if ( is_home() || is_front_page() ) { ?>
+
 		
 			<header class="ui middle aligned stackable page grid" id="main-header-grid">
 			
-		
+
 		
 		<video muted="" preload="auto" loop="" autoplay="" poster="" class="evg-video">
 
-			<source src="http://evertank.net/videoplayback.mp4" type="video/webm">
+			<source src="http://localhost:8080/wp-content\uploads\video-banner/videoplayback.mp4" type="video/webm">
 
 		</video>
 		
@@ -79,6 +111,13 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 				if ($logo_width != 'zero') {
 					?>
 				<div class="<?php echo $logo_width; ?> wide center aligned column" id="columlogo">
+				
+
+
+
+				
+
+
 					<?php
 					if ($theme->get_option('logo_url')) {
 						?>
@@ -91,9 +130,6 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 				</div>
 				
 				 
-				
-				
-
 				
 				<?php
 				} // logo width
@@ -110,6 +146,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 								<?php echo $theme->get_option('header_subtext'); ?>
 							</div>
 						</h1>
+						
 						<?php
 					}
 					if (has_nav_menu($menu_loc = 'main-menu')) {
@@ -122,11 +159,56 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 						));
 					}
 					?>
-				</div>
+			
+			</div>
+			
+			
+			
 			<?php
 			} // menu width
 			?>
+			
 			</header>
+			
+			<div class="strategy barone">
+			<?php
+		$right_sidebar = 'sidebar-widget-area-right';
+		if (is_active_sidebar($right_sidebar)) {
+			dynamic_sidebar($right_sidebar);
+		} else {
+			echo 'The right sidebar does not have any widgets!';
+		}
+		?>
+			</div>
+			
+			<div class="strategy bartoo">
+			
+			<div class="client-part"><span>
+			<?php
+		
+			$langs =  get_language_attributes( 'html' );
+			
+	
+			switch ($langs){
+			
+			case 'lang="en-US"':
+			echo 'Are part of our history and we are part of them.';
+			break;
+			case 'lang="pt-BR"':
+			echo 'Fazem parte da nossa história e fazemos parte da deles';
+			break;			
+				
+			}
+			
+			
+			?></span>
+			</div>
+			 
+			
+			<?php echo do_shortcode('[hs-brand]'); ?>
+
+			</div>
+			
 			
 			
 			<?php } else {?>
@@ -148,16 +230,19 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 					?>
 				</div>
 				
-			<?php }  ?>
+			
 			
 			</header>
 			
 			
 			
+			<?php }  ?>
 			
+			<?php if ( is_home() || is_front_page() ) { ?>
+			<div class="ui page stackable grid articles-part" id="main-content-grid">
+			<?php }else{  ?>
+			<div class="ui page stackable grid " id="main-content-grid">
+			<?php }  ?>
 			
-			
-			
-			
-			<div class="ui page stackable grid" id="main-content-grid">
+				
 				<div class="sixteen wide column"><?php

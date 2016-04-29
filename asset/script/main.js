@@ -31,8 +31,6 @@ $(document).ready(function() {
      $('#mainlogo').transition('horizontal flip');
 	}, 1200);
   
-	
-	
 
 	// Toggle a sliding animation animation
 	$("#wprmenu_bar").click(function () {

@@ -48,7 +48,7 @@ if (have_posts()) {
 						$cat_i++;
 					}
 					printf(
-						'<div class="sub header">Filed Under: %1$s</div>',
+						'',
 						implode(', ', $cat_array)
 					);
 				}
@@ -86,14 +86,30 @@ if (have_posts()) {
 				?></section><?php
 			}
 			?>
+			<?php		
+			$langs =  get_language_attributes( 'html' );
+			switch ($langs){
+			case 'lang="en-US"':
+			$button = "View Post";
+			break;
+			case 'lang="pt-BR"':
+			$button = "Leia Mais";
+			break;			
+			}
+			?>
+			
+			
 			<div class="ui basic segment">
 				<?php
 				if (is_singular()) {
 					edit_post_link( '<span class="ui tiny black right floated button">'.__( 'Edit This', $theme::TEXT_DOMAIN).'</span>');
 				} else {
-					?><a itemprop="url" href="<?php the_permalink(); ?>" class="ui tiny black right floated button" rel="bookmark">View Post</a><?php
+					?>
+					
+					<a itemprop="url" href="<?php the_permalink(); ?>" class="" rel="bookmark"><button class="ui yellow button"><?php echo $button;?></button></a><?php
 				}
 				?>
+				
 				<span class="ui circular labels tags-links">
 					<?php
 					$post_tags = get_the_tags();
@@ -118,7 +134,7 @@ if (have_posts()) {
 					?>
 				</span>
 				<div>
-					Article created by
+					
 					<span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">
 						<?php
 						$author     = get_the_author();
@@ -136,14 +152,14 @@ if (have_posts()) {
 						} else {
 							printf(
 								'<span class="fn author-no-link" itemprop="name">%1$s</span>',
-								$author
+								$authors
 							);
 						}
 						?>
 					</span>
-					on
+					
 					<time class="updated" datetime="<?php the_time('m-d-Y H:i'); ?>" itemprop="datePublished" content="<?php the_time('c'); ?>">
-						<?php the_date(); ?>
+						
 					</time>
 				</div>
 			</div>
