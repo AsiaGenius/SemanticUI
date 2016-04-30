@@ -8,10 +8,26 @@
 
 theme_header();
 ?>
-<div class="ui stackable grid">
-	<main class="eleven wide column" style="width: 100%!important;">
+
+<?php
+//Apply all translate custom buttons and general texts 
+
+$langs =  get_language_attributes( 'html' );
+switch ($langs){
+case 'lang="en-US"':
+$text1 = 'Articles';
+break;
+case 'lang="pt-BR"':
+$text1 = 'Artigos';
+break;			
+}
+?>
+<div class="ui stackable grid" >
+	<main class="eleven wide column" style="width: 100%!important;margin: auto; text-align: center;">
+	
 	<?php if ( is_home() || is_front_page() ) { ?>
-	<div class="titleartt"><span>Articles</span></div>
+	
+	<div class="titleartt"><span><?php echo $text1;?></span></div>
 	<?php }?>
 	
 		<?php template_part($theme->content_sub_path.'/loop', $theme->post_type); ?>

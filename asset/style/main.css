@@ -528,7 +528,7 @@ img {
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
-    width: 300px;
+        width: 40vmin;
     position: relative;
     margin: auto;
     text-align: center;
@@ -546,9 +546,6 @@ img {
 
 
 .strategy{
-    position: relative;
-    
-    width: 102%;
     overflow: hidden;
     margin-left: -14px;
     
@@ -564,7 +561,7 @@ img {
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
-    width: 300px;
+        width: 40vmin;
     position: relative;
     margin: auto;
     text-align: center;
@@ -582,9 +579,6 @@ img {
 
 
 .strategy{
-    position: relative;
-    
-    width: 102%;
     overflow: hidden;
     margin-left: -14px;
     
@@ -600,7 +594,7 @@ img {
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
-    width: 300px;
+        width: 40vmin;
     position: relative;
     margin: auto;
     text-align: center;
@@ -618,9 +612,6 @@ img {
 
 
 .strategy{
-    position: relative;
-    
-    width: 102%;
     overflow: hidden;
     margin-left: -14px;
     
@@ -629,6 +620,7 @@ img {
 }
 
 @media only screen and (min-width: 750px) {
+	
 
 
 	.strategy li{
@@ -637,7 +629,7 @@ img {
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
-    width: 300px;
+        width: 40vmin;
     position: relative;
     margin: auto;
     text-align: center;
@@ -655,9 +647,6 @@ img {
 
 
 .strategy{
-    position: relative;
-    
-    width: 102%;
     overflow: hidden;
     margin-left: -14px;
     
@@ -667,13 +656,17 @@ img {
 }
 
 @media only screen and (min-width: 1000px) {
+	.eleven.wide.column article{
+	float: left !important;
+        width: 45vmin!important;
+}
 	.strategy li{
     font-family: 'Open Sans',sans-serif;
     font-size: 3vmin;
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
-    width: 300px;
+        width: 40vmin;
     position: relative;
     margin: auto;
     text-align: center;
@@ -690,9 +683,6 @@ img {
 }
 
 .strategy{
-    position: relative;
-    
-    width: 102%;
     overflow: hidden;
     margin-left: -14px;
     
@@ -702,14 +692,17 @@ img {
 }
 
 @media only screen and (min-width: 1250px) {
-
+.eleven.wide.column article{
+	float: left !important;
+        width: 45vmin!important;
+}
 	.strategy li{
     font-family: 'Open Sans',sans-serif;
     font-size: 3vmin;
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
-    width: 300px;
+        width: 40vmin;
     position: relative;
     margin: auto;
     text-align: center;
@@ -726,9 +719,6 @@ img {
 }
 
 .strategy{
-    position: relative;
-    
-    width: 102%;
     overflow: hidden;
     margin-left: -14px;
     	
@@ -736,6 +726,14 @@ img {
 
 }
 
+
+@media only screen and (min-width: 1450px) {
+.eleven.wide.column article{
+	float: left !important;
+        width: 32vmin!important;
+}
+
+}
 
 .descida{
     z-index: 1;
@@ -822,10 +820,12 @@ color: #CECBC8;
 color: #CECBC8;
 }
 
-.eleven.wide.column article{
-	float: left !important;
-        width: 33% !important;
+.eleven.wide.column {
+	    width: 85%!important;
+    margin: auto;
 }
+
+
 
 .postlissmall{
 	width: 100%!important;
