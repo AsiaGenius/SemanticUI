@@ -64,7 +64,7 @@ $(document).on('scroll', function(){
     $('.hiddenforview').each(function(){
         
 		if(isScrolledIntoView($(this))){
-            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('scale');
+            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('scale','900ms');
         }
 		
 		

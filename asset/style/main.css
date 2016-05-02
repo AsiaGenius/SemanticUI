@@ -497,7 +497,7 @@ img {
 .ui.dividing.header.widget-title{
 	
 	font-family: 'Open Sans',sans-serif;
-	font-size: 7vmin;
+	font-size: 5vmin;
     font-weight: 100;
     color: #EF4019;
     line-height: 1.2;
@@ -784,7 +784,7 @@ background: #EF411A;
 
 .client-part span{
 	font-family: 'Open Sans',sans-serif;
-    font-size: 7vmin;
+    font-size: 5vmin;
     font-weight: 100;
     color: #F1F1F1;
     line-height: 1.2;
@@ -849,7 +849,7 @@ a.inverted {
 
 .titleartt{
 	color: #CECBC8;
-    font-size: 7vmin;
+    font-size: 5vmin;
     border-bottom: 1px solid #93918F;
 	text-align:center;
 	padding: 2%;
