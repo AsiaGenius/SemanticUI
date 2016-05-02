@@ -904,5 +904,5 @@ a.inverted {
 
 .mundim{
 	    color: white;
-    font-size: 4vmin;
+    font-size: 4vmin!important;
 }
