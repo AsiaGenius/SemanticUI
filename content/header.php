@@ -85,14 +85,16 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
     <i class="dropdown icon"></i>
     <div class="menu">
       <div class="item">
-        <img class="ui  image" src="http://personallocksmith.com/images/flags/brazil.png">
-		
+        <a href="?lang=en">
+		<img class="ui  image" src="http://personallocksmith.com/images/flags/brazil.png">
+		</a>
       </div>
 	  
 	  
 	  <div class="item">
+	  <a href="?lang=pt">
         <img class="ui  image" src="https://s3.amazonaws.com/cdn.enveritasgroup.com/uploads/2016/02/usa.jpg">
-
+		</a>
       </div>
       
     </div>
