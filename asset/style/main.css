@@ -136,9 +136,9 @@ pre code {
 }
 
 a { /* Override */
-	color: #006758;
-	font-weight: 600;
-	text-decoration: none;
+    color: #303333;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover, a:focus, a:active { /* Override */
@@ -856,3 +856,15 @@ a.inverted {
 	margin-top: 3%;
     margin-bottom: 3%;
 }
+
+
+.strategy i:hover{
+	
+	color: #EF411A;
+}
+
+.menu-header-container {
+	width: 68%;
+    margin: auto;
+}
+
