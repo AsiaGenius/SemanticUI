@@ -142,7 +142,7 @@ a { /* Override */
 }
 
 a:hover, a:focus, a:active { /* Override */
-	color: #35BDB2;
+	color: #696969;
 }
 
 a.inverted { /* Override */
