@@ -31,7 +31,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 <html <?php language_attributes(); ?>>
 <head>
 <?php template_part($theme->content_sub_path.'/head'); ?>
-<script src="//use.edgefonts.net/abel.js"></script>
+
 </head>
 <body <?php body_class('public-page'); ?> class="aparition">
 
