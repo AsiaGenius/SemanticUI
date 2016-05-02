@@ -913,9 +913,33 @@ a.inverted {
 }
 
 .argui button{
-	
+	transition:All 500ms ease;
+-webkit-transition:All 500ms ease;
+-moz-transition:All 500ms ease;
+
 	min-height: 4em!important;
     min-width: 13em!important;
 	background: rgba(224, 225, 226, 0.29)!important;
 	color: white!important;
+}
+
+
+.argui button:hover{
+	
+	    min-height: 4em!important;
+    min-width: 13em!important;
+    background: rgba(8, 8, 8, 0.98)!important;
+    color: white!important;
+	
+	
+	
+}
+
+.argui button:hover i{
+	
+	position:relative;
+	left:13px;
+	
+	
+	
 }
