@@ -775,7 +775,9 @@ background: #f1f1f1;
 
 
 .bartoo{
-background: #EF411A;	
+background: #FFFFFF;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .client-part{
@@ -789,7 +791,7 @@ background: #EF411A;
 	font-family: 'Open Sans',sans-serif;
     font-size: 5vmin;
     font-weight: 100;
-    color: #F1F1F1;
+    color: #696969;
     line-height: 1.2;
     width: 77%;
     position: relative;
@@ -936,5 +938,13 @@ a.inverted {
 
 #wprmenu_menu ul {
     top: 24vmin!important;
+}
+
+
+.slicknav_menu{
+background: rgba(76, 76, 76, 0);	
+position: absolute;
+z-index: 1;
+top: 4vmin;
 }
 
