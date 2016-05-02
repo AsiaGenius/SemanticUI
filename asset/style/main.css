@@ -913,10 +913,6 @@ a.inverted {
 }
 
 .argui button{
-	transition:All 500ms ease;
--webkit-transition:All 500ms ease;
--moz-transition:All 500ms ease;
-
 	min-height: 4em!important;
     min-width: 13em!important;
 	background: rgba(224, 225, 226, 0.29)!important;
@@ -925,7 +921,9 @@ a.inverted {
 
 
 .argui button:hover{
-	
+	transition:All 700ms ease;
+-webkit-transition:All 700ms ease;
+-moz-transition:All 700ms ease;
 	    min-height: 4em!important;
     min-width: 13em!important;
     background: rgba(8, 8, 8, 0.98)!important;
@@ -935,11 +933,4 @@ a.inverted {
 	
 }
 
-.argui button:hover i{
-	
-	position:relative;
-	left:13px;
-	
-	
-	
-}
+
