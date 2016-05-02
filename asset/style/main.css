@@ -514,7 +514,9 @@ img {
     margin-bottom: 6%;
     margin-top: 7%;
 	font-size: 4em;
-	
+	transition:All 500ms ease;
+-webkit-transition:All 500ms ease;
+-moz-transition:All 500ms ease;
 }
 
 
