@@ -34,6 +34,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 
 </head>
 <body <?php body_class('public-page'); ?> class="aparition">
+<div class="se-pre-con"></div>
 <style>
 	.evg-video {
     position: absolute;
