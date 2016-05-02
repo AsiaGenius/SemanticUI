@@ -29,7 +29,7 @@ $(document).ready(function(){
 $(document).on('scroll', function(){
     $('.hiddenforview').each(function(){
         if(isScrolledIntoView($(this))){
-            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('swing down');
+            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('scale');
         }
     });
 });

@@ -103,7 +103,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 		
 		<video muted="" preload="auto" loop="" autoplay="" poster="" class="evg-video">
 
-			<source src="http://25.75.181.144:8080/wp-content\uploads\video-banner/videoplayback.mp4" type="video/webm">
+			<source src="https://s3.amazonaws.com/cdn.enveritasgroup.com/uploads/2016/02/enveritas-home-video.mp4" type="video/webm">
 
 		</video>
 		
