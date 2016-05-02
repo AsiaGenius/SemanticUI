@@ -111,7 +111,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 		
 		<video muted="" preload="auto" loop="" autoplay="" poster="" class="evg-video">
 
-			<source src="wp-content\themes\Semantic\video.mp4" type="video/webm">
+			<source src="video.mp4" type="video/webm">
 
 		</video>
 		
