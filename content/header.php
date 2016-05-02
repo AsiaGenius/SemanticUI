@@ -111,7 +111,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 		
 		<video muted="" preload="auto" loop="" autoplay="" poster="" class="evg-video">
 
-			<source src="https://s3.amazonaws.com/cdn.enveritasgroup.com/uploads/2016/02/enveritas-home-video.mp4" type="video/webm">
+			<source src="wp-content\themes\Semantic\video.mp4" type="video/webm">
 
 		</video>
 		
@@ -178,7 +178,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 			
 			</header>
 			
-			<div class="strategy barone content hiddenforview">
+			<div class="strategy barone">
 			<?php
 		$right_sidebar = 'sidebar-widget-area-right';
 		if (is_active_sidebar($right_sidebar)) {
@@ -189,7 +189,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 		?>
 			</div>
 			
-			<div class="strategy bartoo content hiddenforview">
+			<div class="strategy bartoo">
 			
 			<div class="client-part"><span>
 			<?php

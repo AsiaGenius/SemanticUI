@@ -10,8 +10,7 @@ $(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
-
-
+	
 function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
@@ -25,18 +24,61 @@ function isScrolledIntoView(elem)
 
 
 $(document).ready(function(){
-     $('.content').each(function(){
+     $('.widget-title').each(function(){
         if(!isScrolledIntoView($(this))){
             $(this).addClass('hiddenforview');
         }
     });
-
-$(document).on('scroll', function(){
-    $('.hiddenforview').each(function(){
-        if(isScrolledIntoView($(this))){
-            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('scale');
+	
+	
+	$('.menu-sub-header-container').each(function(){
+        if(!isScrolledIntoView($(this))){
+            $(this).addClass('hiddenforview');
         }
     });
+	
+	$('.client-part').each(function(){
+        if(!isScrolledIntoView($(this))){
+            $(this).addClass('hiddenforview');
+        }
+    });
+	
+	$('.hs-brand-logo-slider-list').each(function(){
+        if(!isScrolledIntoView($(this))){
+            $(this).addClass('hiddenforview');
+        }
+    });
+	
+	$('.titleartt').each(function(){
+        if(!isScrolledIntoView($(this))){
+            $(this).addClass('hiddenforview');
+        }
+    });
+	
+	
+	
+	
+
+$(document).on('scroll', function(){
+	
+    $('.hiddenforview').each(function(){
+        
+		if(isScrolledIntoView($(this))){
+            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('scale');
+        }
+		
+		
+		
+		
+		
+		
+		
+    });
+	
+	
+	
+	
+	
 });
 });
 
