@@ -871,6 +871,11 @@ a.inverted {
     margin: auto;
 }
 
+.menu-header{
+	    width: 96%;
+    margin: auto;
+}
+
 .hiddenforview{
     visibility: hidden;
 }
