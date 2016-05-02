@@ -80,7 +80,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
   <div class="ui inline dropdown">
     <div class="text">
 	  
-<i class="world icon">teste</i>
+<i class="world icon mundim"></i>
     </div>
     <i class="dropdown icon"></i>
     <div class="menu">
