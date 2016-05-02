@@ -868,3 +868,6 @@ a.inverted {
     margin: auto;
 }
 
+.hiddenforview{
+    visibility: hidden;
+}

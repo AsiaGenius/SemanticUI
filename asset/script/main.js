@@ -6,6 +6,36 @@ WebFont.load({
 	]}
 });
 
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+
+$(document).ready(function(){
+     $('.content').each(function(){
+        if(!isScrolledIntoView($(this))){
+            $(this).addClass('hiddenforview');
+        }
+    });
+
+$(document).on('scroll', function(){
+    $('.hiddenforview').each(function(){
+        if(isScrolledIntoView($(this))){
+            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).fadeIn();
+        }
+    });
+});
+});
+
+
 $(document).ready(function() {
 	// Semantic UI inits
 	$('.ui.accordion').accordion();

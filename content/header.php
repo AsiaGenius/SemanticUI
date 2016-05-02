@@ -170,7 +170,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 			
 			</header>
 			
-			<div class="strategy barone">
+			<div class="strategy barone content hiddenforview">
 			<?php
 		$right_sidebar = 'sidebar-widget-area-right';
 		if (is_active_sidebar($right_sidebar)) {
@@ -181,7 +181,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 		?>
 			</div>
 			
-			<div class="strategy bartoo">
+			<div class="strategy bartoo content hiddenforview">
 			
 			<div class="client-part"><span>
 			<?php
@@ -239,7 +239,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 			<?php }  ?>
 			
 			<?php if ( is_home() || is_front_page() ) { ?>
-			<div class="ui page stackable grid articles-part" id="main-content-grid">
+			<div class="ui page stackable grid articles-part " id="main-content-grid">
 			<?php }else{  ?>
 			<div class="ui page stackable grid " id="main-content-grid">
 			<?php }  ?>
