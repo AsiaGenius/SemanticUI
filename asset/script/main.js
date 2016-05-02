@@ -24,7 +24,7 @@ function isScrolledIntoView(elem)
 
 
 $(document).ready(function(){
-     $('.widget-title').each(function(){
+     $('.menu-item-type-custom').each(function(){
         if(!isScrolledIntoView($(this))){
             $(this).addClass('hiddenforview');
         }
@@ -64,7 +64,7 @@ $(document).on('scroll', function(){
     $('.hiddenforview').each(function(){
         
 		if(isScrolledIntoView($(this))){
-            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('scale','900ms');
+            $(this).removeClass('hiddenforview').css({ 'display' : 'none' }).transition('fade','1000ms');
         }
 		
 		

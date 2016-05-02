@@ -79,8 +79,8 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 
   <div class="ui inline dropdown">
     <div class="text">
-	  <img class="ui  image" src="https://s3.amazonaws.com/cdn.enveritasgroup.com/uploads/2016/02/usa.jpg">
-
+	  
+<i class="world icon">teste</i>
     </div>
     <i class="dropdown icon"></i>
     <div class="menu">
