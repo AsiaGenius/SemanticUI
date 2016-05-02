@@ -103,6 +103,7 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 
 </div>
 
+
 		
 		<?php if ( is_home() || is_front_page() ) { ?>
 
@@ -173,7 +174,11 @@ $menu_width = $num_to_eng[(16 - (int) $theme->get_option('logo_size'))];
 			</div>
 			
 			
-			
+			<div class="argui">
+<button class="ui button">BRANDING <i class="long arrow left icon"></i></button>
+<button class="ui button">PERFORMANCE <i class="long arrow left icon"></i></button>
+</div>
+
 			<?php
 			} // menu width
 			?>

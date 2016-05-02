@@ -906,3 +906,16 @@ a.inverted {
 	    color: white;
     font-size: 4vmin!important;
 }
+
+.argui{
+	    position: relative;
+    margin: auto;
+}
+
+.argui button{
+	
+	min-height: 4em!important;
+    min-width: 13em!important;
+	background: rgba(224, 225, 226, 0.29)!important;
+	color: white!important;
+}
